@@ -1,7 +1,14 @@
 {% extends 'base.html' %}
 
-{% block title %}Home - Flask App{% endblock %}
+{% block title %}CSC330 Calculator{% endblock %}
 
 {% block content %}
-    <h2>Hello, World!</h2>
+    {{ super() }}
+    <p>In the URL, append (a is first number and b is second number):</p>
+    <ul>
+        <li>'/add/a/b' for Adding</li>
+        <li>'/subtract/a/b' for Subtraction</li>
+        <li>'/multiply/a/b' for Multiplication</li>
+        <li>'/divide/a/b' for Division</li>
+    </ul>
 {% endblock %}
